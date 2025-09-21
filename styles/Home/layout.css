@@ -1,0 +1,27 @@
+
+
+.main-flex{
+  display: flex;
+  flex-direction: column;
+}
+.main-flex section:first-child, .main-flex section:nth-child(2), .main-flex section:last-child{
+  height: 100vh;
+  /* border: black 1px dotted; */
+}
+.wrapper footer{
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 25vh;
+}
+
+.main-flex section:last-child div{
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  display: flex;
+  flex-direction: column;
+}
+nav ul li:first-child a:first-child{
+  zoom:1.1;
+  color: #edfd0fc1;
+}

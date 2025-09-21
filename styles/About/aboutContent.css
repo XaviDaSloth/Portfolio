@@ -1,0 +1,124 @@
+#skills{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5vw;
+  row-gap: 3vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 10vh;
+}
+#skills .skill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid gold;
+  width:30vh;
+  height: 30vh;
+  border-radius: 10%;
+  background: linear-gradient(to bottom, #eeff00c1 -40%, black 100%);
+  transition: 0.5s ease;
+}
+#skills .skill:hover{
+  transform: rotateX(20deg) rotateY(20deg);
+}
+.skill img{
+  width:10vw;
+  align-self: center;
+}
+#skills .skill:nth-child(3) img{
+  width: 4.5vw;
+}
+
+section:nth-child(2) .skills-first{
+  font-size: 3rem;
+  font-family: "Rubik Mono One", monospace;
+  position: relative;
+  padding-bottom: 6%;
+}
+/*BELOW IS THE CSS FOR THE TIMELINE*/
+
+.title{
+  font-family: 'Rubik Mono One',monospace;
+  font-size: 3rem;
+  padding-left: 3em;
+  min-width: 30vw;
+}
+.checkpoint div h2{
+  font-size: 1.3rem;
+  transition: 0.5s ease-in;
+}
+.timeline{
+  width: 100%;
+}
+.checkpoint{
+  max-width: 34em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+  flex: 2;
+}
+.checkpoint div{
+  border: 2px solid #888;
+  border-radius: 1em;
+  padding: 1em;
+  width: 100%;
+  transition: 0.5s ease;
+}
+.checkpoint p{
+  line-height: 27px;
+  color: #ccc;
+  transition: 0.5s ease-in;
+}
+.checkpoint:nth-child(odd){
+  border-left: 3px solid #888;
+  padding-left: 3em;
+  transform: translateX(17em);
+}
+.checkpoint:nth-child(even){
+  border-right: 3px solid #888;
+  padding-right: 3em;
+  transform: translateX(-16.83em);
+}
+.checkpoint:nth-child(even)::before,
+.checkpoint:nth-child(odd)::before{
+  content: '';
+  background: #888;
+  width: 3em;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.checkpoint:nth-child(odd)::before{
+  left: 0;
+}
+.checkpoint:nth-child(even)::before{
+  right: 0;
+}
+.checkpoint:nth-child(even) div::before,
+.checkpoint:nth-child(odd) div::before{
+  content: '';
+  background: gold;
+  box-shadow: 0 0 0.5em #0d71fc;
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.checkpoint:nth-child(odd) div::before{
+  left: -0.5em;
+}
+.checkpoint:nth-child(even) div::before{
+  right: -0.5em;
+}
+.checkpoint div:hover{
+  background-color: rgba(255, 217, 0, 0.674);
+}
+.checkpoint div:hover p, .checkpoint div:hover h2{
+  transform: translateX(2%);
+  color:black;
+}

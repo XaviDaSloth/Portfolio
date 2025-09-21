@@ -1,0 +1,45 @@
+main section:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section:first-child .introduction{
+  display: flex;
+  flex-direction:row;
+  /* background-color: cadetblue; */
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
+  overflow: hidden;
+}
+.introduction .intro{
+  font-size: 3rem;
+  font-family: "Rubik Mono One", monospace;
+  text-shadow: 0 0 8px gold;
+  border-right: 5px solid gold;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+  width: 57%;
+  color: gold;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+  typing 2s steps(17),
+  cursor .4s step-end infinite alternate
+  ;
+  z-index: 5;
+}
+@keyframes cursor{
+  50%{ border-color: transparent}
+}
+@keyframes typing{
+  from{width: 0;}
+}
+.johnny{
+  position: absolute;
+  height: 100%;
+  opacity: 0.7;
+  left: 0;
+  transform: rotateY(180deg);
+}

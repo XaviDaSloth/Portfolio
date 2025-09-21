@@ -1,0 +1,77 @@
+.container {
+  padding-top:5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: rgba(34, 33, 31, 0.11);
+  padding: 20px;
+  border: 1px solid #555;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 50vw;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Rubik Mono One", monospace;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #fff;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#response {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #fff;
+}
+
+#send{
+  background-color:gold;
+  color: black;
+  position: relative; 
+  width: 14vw;
+  left: 17vw;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#send:hover{
+  color:black;
+  background-color: #e2c319;
+}

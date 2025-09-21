@@ -1,0 +1,61 @@
+.cubeBackground{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-flex section .cubeBackground{
+  position: relative;
+  transform: skewY(-15deg);
+}
+.main-flex section .cubeBackground .cube{
+  position: relative;
+  translate: calc(var(--z) * 3vw) calc(var(--z)*3vw);
+}
+.main-flex section .cubeBackground .cube div{
+  position: absolute;
+  translate: calc(-4vw * var(--x)) calc(-4vw * var(--y));
+}
+.main-flex section .cubeBackground .cube div span{
+  position:relative;
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  background: #988101;
+  transition: 0.2s;
+}
+.main-flex section .cubeBackground .cube div span.active{
+  background: rgb(222, 190, 5);
+  transform: translate(0,-40px);
+  animation: animate 1s ease-in-out infinite;
+}
+.main-flex section .cubeBackground .cube div span::before{
+  content: '';
+  position: absolute;
+  left: -5vw;
+  width: 5vw;
+  height: 100%;
+  background: #a79c05;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 1s;
+}
+.main-flex section .cubeBackground .cube div span::after{
+  content: '';
+  position: absolute;
+  top: -5vw;
+  left: 0;
+  width: 100%;
+  height: 5vw;
+  background: #f2f2f2;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 1s;
+  box-shadow: -100px 100px 5px rgba(0,0,0,0.15);
+}
+.main-flex section .cubeBackground .cube div span.active::after{
+  background: rgba(219, 186, 2, 0.848);
+  box-shadow: -150px 150px 5px rgba(0,0,0,0.15);
+}
+.main-flex section .cubeBackground .cube div span.active::before{
+  background: rgba(210, 180, 8, 0.719);
+}
